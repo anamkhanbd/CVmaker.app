@@ -4,9 +4,24 @@
     Welcome to CV Maker
 @endsection
 
+@section('css')
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+@endsection
 
 @section('content')
-    <h1>Welcome to CV Maker</h1>
-    <p>This is the home page of your CV Maker application.</p>
-    <p>Use the navigation to create and manage your CVs.</p>
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="text-center">Welcome to My Cv Creator</h2>
+            <h1>
+                Create a <br> Compelling CV with <br>AI assistance in <br> minutes.
+            </h1>
+            <h4>
+                Online resume builder with AI assistance
+            </h4>
+            <div class="btn btn-primary">GET STARTED</div>
+        </div>
+        <div class="col-md-6" id="hero-image">
+
+        </div>
+   </div>
 @endsection
