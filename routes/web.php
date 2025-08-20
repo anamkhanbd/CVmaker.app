@@ -1,7 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PagesController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [PagesController::class, 'index'])->name('home');
+
+// Pages
+Route::get('/cvmaker', [PagesController::class, 'cvmaker'])->name('cvmaker');
+// Templates
+Route::get('/template/professional', [PagesController::class, 'professonal'])->name('template.professional');
+Route::get('/template/normal', [PagesController::class, 'normal'])->name('template.normal');

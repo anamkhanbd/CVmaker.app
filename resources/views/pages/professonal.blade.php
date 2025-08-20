@@ -1,9 +1,7 @@
 @extends('layout.app')
-
 @section('title')
-    Welcome to CV Maker
+    Professional CV Template
 @endsection
-
 
 @section('content')
     <h1>Welcome to CV Maker</h1>
