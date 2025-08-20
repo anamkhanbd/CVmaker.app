@@ -5,12 +5,3 @@
 }
 
 /* welcome pages */
-#hero-image {
-    background-image: url('../images/hero.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
