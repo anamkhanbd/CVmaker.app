@@ -25,6 +25,10 @@ class PagesController extends Controller
         return view('pages.normal');
     }
 
+    //cv form 
+    public function cvform(){
+        return view('pages.cv-form');
+    }
 
 
 

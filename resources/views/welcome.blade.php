@@ -35,7 +35,7 @@
             <h4>
                 Online resume builder with AI assistance
             </h4>
-            <div class="btn btn-primary">GET STARTED</div>
+            <div class="btn btn-primary"><a href="{{ route('cvform') }}" class="text-decoration-none text-light">GET STARED</a></div>
         </div>
         <div class="col-md-6 flex felx-row " id="hero-image">
             
