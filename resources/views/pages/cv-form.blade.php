@@ -41,7 +41,7 @@
         </div>
         <div class="col-md-7">
             <h2 class="text-center">Create Your CV</h2>
-            <form action="" method="post">
+            <form action="" method="post" enctype="multipart/form-data">
                 @csrf
                 <h5 class="text-muted">Personal Information</h5>
                 <div class="form-row">
@@ -70,6 +70,7 @@
                     <input type="email" class="form-control" id="email" name="email" placeholder="+880170000000" required>
                 </div>
 
+{{-- Address Section  --}}
                 <br>
                 <h5 class="text-muted">Address</h5>
                 <div class="form-group">
@@ -86,7 +87,25 @@
                     </select>
                 </div>
 
+                <div class="form-group">
+                    <label for="city">City :</label>
+                    <input type="text" class="form-control" id="city" name="city" placeholder="City Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address :</label>
+                    <textarea class="form-control" id="address" name="address" rows="3" placeholder="Your Address" required></textarea>
+                </div>
+
+                {{-- upload files --}}
+                <div class="form-group">
+                    <label for="address">Upload Your Photo :</label>
+                    <input type="file" class="form-control-file" id="photo" name="photo" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Generate CV</button>
             </form>
         </div>
     </div>
+    <br><br>
 @endsection
